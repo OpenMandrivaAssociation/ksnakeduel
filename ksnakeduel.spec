@@ -1,5 +1,5 @@
 Name:		ksnakeduel
-Version:	15.04.0
+Version:	15.04.2
 Release:	1
 Epoch:		1
 Summary:	Snake race played against the computer
