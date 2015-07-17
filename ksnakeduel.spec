@@ -22,9 +22,14 @@ other snake or the wall the game is lost. This becomes of course more and
 more difficult the longer the snakes grow.
 
 %files
-%{_bindir}/kdesnake                                                                                    
-%{_datadir}/applications/kde4/kdesnake.desktop                                                         
-%{_iconsdir}/hicolor/*/*/kdesnake.*                                                                    
+%{_bindir}/ksnakeduel                                                                                    
+%{_datadir}/applications/kde4/ksnakeduel.desktop   
+%{_datadir}/config.kcfg/ksnakeduel.kcfg
+%{_datadir}/apps/ktron/ksnakeduelui.rc
+%{_datadir}/config/ksnakeduel.knsrc
+%{_iconsdir}/hicolor/*/*/ksnakeduel.*    
+%{_datadir}/apps/ksnakeduel/themes/*
+%doc %{_docdir}/HTML/en/ksnakeduel/*
   
 #------------------------------------------------------------------------------
 
