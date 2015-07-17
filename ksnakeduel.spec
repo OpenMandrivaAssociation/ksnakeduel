@@ -33,28 +33,6 @@ more difficult the longer the snakes grow.
   
 #------------------------------------------------------------------------------
 
-%package -n ktron
-Summary:	Simple Tron clone
-Group:		Graphical desktop/KDE
-URL:		http://www.kde.org/applications/games/ktron
-
-%description -n ktron
-Well known from the famous movie, KTron is a popular computer game for two
-players. In a fast action sequence both players have to move and avoid
-colliding with any walls, the opponent as well as the own path. The player
-colliding first looses the game.
-
-%files -n ktron
-%{_bindir}/ktron                                                                                       
-%{_datadir}/applications/kde4/ktron.desktop                                                            
-%{_datadir}/apps/ktron                                                                                 
-%{_datadir}/config.kcfg/ktron.kcfg                                                                     
-%{_datadir}/config/ktron.knsrc                                                                         
-%{_iconsdir}/hicolor/*/*/ktron.png                                                                     
-%doc %{_docdir}/HTML/en/ktron   
-
-#------------------------------------------------------------------------------
-
 %prep
 %setup -q
 
