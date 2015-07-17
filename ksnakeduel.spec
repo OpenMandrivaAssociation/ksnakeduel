@@ -8,7 +8,7 @@ License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/ksnakeduel/
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
-BuildRequires:	kdelibs-level
+BuildRequires:	kdelibs-devel
 BuildRequires:	cmake(KDEGames)
 Obsoletes:	kdesnake < 1:4.9.80
 Provides:	kdesnake = %{EVRD}
