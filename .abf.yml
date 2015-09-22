@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   ksnakeduel-15.08.0.tar.xz: 529dd6603d275133d66c57810d48f9bb30f33972
+sources:
+  ksnakeduel-15.08.1.tar.xz: 176c1d5a4c3cba73c20e21d9025f184f9bd9ed49
