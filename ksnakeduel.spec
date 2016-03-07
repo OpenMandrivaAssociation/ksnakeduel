@@ -1,6 +1,6 @@
 Name:		ksnakeduel
 Version:	15.12.2
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	Snake race played against the computer
 Group:		Graphical desktop/KDE
@@ -13,7 +13,7 @@ BuildRequires:	cmake(KDEGames)
 Obsoletes:	kdesnake < 1:4.9.80
 Provides:	kdesnake = %{EVRD}
 Provides:	ksnake = %{EVRD}
-Requires:	ktron = %{EVRD}
+Obsoletes:	ktron
 
 %description
 KSnakeDuel is a fast action game where you steer a snake which has to eat
