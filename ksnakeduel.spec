@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ksnakeduel
-Version:	 18.08.3
+Version:	 18.11.80
 Release:	1
 Epoch:		1
 Summary:	Snake race played against the computer
@@ -22,6 +22,7 @@ other snake or the wall the game is lost. This becomes of course more and
 more difficult the longer the snakes grow.
 
 %files -f %{name}.lang
+%{_sysconfdir}/xdg/ksnakeduel.categories
 %{_sysconfdir}/xdg/ksnakeduel.knsrc
 %{_bindir}/ksnakeduel
 %{_datadir}/applications/org.kde.ksnakeduel.desktop
