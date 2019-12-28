@@ -43,6 +43,3 @@ more difficult the longer the snakes grow.
 %install
 %ninja_install -C build
 %find_lang %{name} --all-name --with-html
-
-# FIXME workaround for gdb hang
-strip --strip-unneeded %{buildroot}%{_bindir}/ksnakeduel
