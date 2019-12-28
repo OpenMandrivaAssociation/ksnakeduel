@@ -1,13 +1,13 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ksnakeduel
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Epoch:		1
 Summary:	Snake race played against the computer
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/ksnakeduel/
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Obsoletes:	kdesnake < 1:4.9.80
 Provides:	kdesnake = %{EVRD}
 Provides:	ksnake = %{EVRD}
@@ -43,3 +43,6 @@ more difficult the longer the snakes grow.
 %install
 %ninja_install -C build
 %find_lang %{name} --all-name --with-html
+
+# FIXME workaround for gdb hang
+strip --strip-unneeded %{buildroot}%{_bindir}/ksnakeduel
