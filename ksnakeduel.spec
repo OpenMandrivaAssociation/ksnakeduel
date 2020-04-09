@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ksnakeduel
 Version:	20.03.90
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	Snake race played against the computer
 Group:		Graphical desktop/KDE
