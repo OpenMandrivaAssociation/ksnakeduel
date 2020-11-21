@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		ksnakeduel
-Version:	20.08.3
+Version:	20.11.80
 Release:	1
 Epoch:		1
 Summary:	Snake race played against the computer
@@ -23,7 +23,7 @@ more difficult the longer the snakes grow.
 
 %files -f %{name}.lang
 %{_datadir}/qlogging-categories5/ksnakeduel.categories
-%{_sysconfdir}/xdg/ksnakeduel.knsrc
+%{_datadir}/knsrcfiles/ksnakeduel.knsrc
 %{_bindir}/ksnakeduel
 %{_datadir}/applications/org.kde.ksnakeduel.desktop
 %{_datadir}/config.kcfg/ksnakeduel.kcfg
