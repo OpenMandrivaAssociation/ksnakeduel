@@ -13,7 +13,7 @@ Provides:	kdesnake = %{EVRD}
 Provides:	ksnake = %{EVRD}
 Obsoletes:	ktron
 BuildRequires:	cmake ninja cmake(ECM)
-BuildRequires:	cmake(KF5Completion) cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5DBusAddons) cmake(KF5GuiAddons) cmake(KF5I18n) cmake(KF5KDEGames) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5Svg) cmake(Qt5Widgets)
+BuildRequires:	cmake(KF5Completion) cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5Crash) cmake(KF5DBusAddons) cmake(KF5GuiAddons) cmake(KF5I18n) cmake(KF5KDEGames) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5Svg) cmake(Qt5Widgets) cmake(KF5DocTools)
 
 %description
 KSnakeDuel is a fast action game where you steer a snake which has to eat
