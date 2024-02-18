@@ -1,12 +1,19 @@
+%define git 20240218
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		plasma6-ksnakeduel
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 Summary:	Snake race played against the computer
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/ksnakeduel/
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/games/ksnakeduel/-/archive/%{gitbranch}/ksnakeduel-%{gitbranchd}.tar.bz2#/ksnakeduel-%{git}.tar.bz2
+%else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/ksnakeduel-%{version}.tar.xz
+%endif
 Obsoletes:	kdesnake < 1:4.9.80
 Provides:	kdesnake = %{EVRD}
 Provides:	ksnake = %{EVRD}
@@ -33,7 +40,7 @@ more difficult the longer the snakes grow.
 #------------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n ksnakeduel-%{?git:master}%{!?git:%{version}}
+%autosetup -p1 -n ksnakeduel-%{?git:%{gitbranchd}}%{!?git:%{version}}
 
 %build
 %cmake \
