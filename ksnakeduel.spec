@@ -6,7 +6,7 @@ Epoch:		1
 Summary:	Snake race played against the computer
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/ksnakeduel/
+URL:		https://www.kde.org/applications/games/ksnakeduel/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Obsoletes:	kdesnake < 1:4.9.80
 Provides:	kdesnake = %{EVRD}
